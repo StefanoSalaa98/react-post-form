@@ -23,7 +23,7 @@ const MyMain = () => {
     function handleSubmit(e) {
         e.preventDefault();
         axios.post("https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts", formData)
-            .then(res => console.log("dati inviati", res.data))
+            .then(res => alert("dati inviati"))
             .catch(error => console.log(error))
     }
 
